@@ -9,6 +9,18 @@ public class Factorial {
 
         numero = 8;
 
+        factorial = calculaFactorial(numero);
+
+        getFactorial(factorial);
+
+    }
+
+    public static void getFactorial(int factorial) {
+        System.out.println(factorial);
+    }
+
+    public static int calculaFactorial(int numero) {
+        int factorial;
         int contador;
         if (numero == 0) {
             factorial = 1;
@@ -18,9 +30,7 @@ public class Factorial {
                 factorial = factorial * contador;
             }
         }
-
-        System.out.println(factorial);
-
+        return factorial;
     }
 
 }
