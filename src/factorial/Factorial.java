@@ -6,7 +6,7 @@ public class Factorial {
     
     public static void main(String[] args) {
         
-        int numero = Integer.parseInt(JOptionPane.showInputDialog("Indica el numero a factorizar"));
+        int numero = Integer.parseInt(JOptionPane.showInputDialog("Indica el numero entero a factorizar"));
         int factorial;
         
         factorial = calculaFactorial(numero);
