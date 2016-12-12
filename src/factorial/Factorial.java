@@ -8,29 +8,29 @@ public class Factorial {
     public static void main(String[] args) {
 
 
-    int j;
-    int f;
+    int numero;
+    int factorial;
 
   
-   j = 8;    
+   numero = 8;    
    
 
     
-   int i;
-   if (j == 0)
-f = 1;
+   int contador;
+   if (numero == 0)
+factorial = 1;
    else
    {
-f = 1;
-for (i = j; i >= 1; i--)
+factorial = 1;
+for (contador = numero; contador >= 1; contador--)
 {
-    f = f * i;
+    factorial = factorial * contador;
 }
    }    
   
  
 
-System.out.println(f); 
+System.out.println(factorial); 
 
 
     }
