@@ -1,24 +1,24 @@
 package factorial;
 
+import javax.swing.JOptionPane;
+
 public class Factorial {
-
+    
     public static void main(String[] args) {
-
-        int numero;
+        
+        int numero = Integer.parseInt(JOptionPane.showInputDialog("Indica el numero a factorizar"));
         int factorial;
-
-        numero = 8;
-
+        
         factorial = calculaFactorial(numero);
-
+        
         getFactorial(factorial);
-
+        
     }
-
+    
     public static void getFactorial(int factorial) {
         System.out.println(factorial);
     }
-
+    
     public static int calculaFactorial(int numero) {
         int factorial;
         int contador;
@@ -32,5 +32,5 @@ public class Factorial {
         }
         return factorial;
     }
-
+    
 }
